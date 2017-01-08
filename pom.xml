@@ -3,11 +3,10 @@
   <groupId>PiPCloud</groupId>
   <artifactId>PiPCloud</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
   <name>PiPCloud</name>
   <description>Personal Cloud Storage Solution built for RaspberryPi</description>
   
-  <parent>
+  	<parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.4.2.RELEASE</version>
@@ -53,14 +52,14 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
+            <!-- <plugin>
 	            <artifactId>maven-compiler-plugin</artifactId>
 	            <version>3.1</version>
 	            <configuration>
 	                <fork>true</fork>
 	                <executable>C:\Program Files\Java\jdk1.8.0_60\bin\javac.exe</executable>
-            </configuration>
-        </plugin>
+	            </configuration>
+	        </plugin> -->
         </plugins>
     </build>
 
@@ -76,4 +75,5 @@
             <url>https://repo.spring.io/libs-release</url>
         </pluginRepository>
     </pluginRepositories>
+    <packaging>war</packaging>
 </project>
