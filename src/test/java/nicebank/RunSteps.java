@@ -1,9 +1,6 @@
 package nicebank;
 
-import cucumber.api.java.en.*;
-
-import cucumber.api.PendingException;
-
+import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
@@ -11,7 +8,9 @@ import cucumber.api.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin = {"pretty", "html:target/cucumber"},
-		features = "classpath:cucumber")
-public class RunStepTests {
+		snippets = SnippetType.CAMELCASE,
+		features = "classpath:cucumber",
+		dryRun = true)
+public class RunSteps {
 	
 }

@@ -1,4 +1,4 @@
-package skeletons;
+package nicebank;
 
 public class Money {
 	public int dollars;

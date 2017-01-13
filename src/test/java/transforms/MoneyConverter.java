@@ -1,7 +1,7 @@
 package transforms;
 
 import cucumber.api.Transformer;
-import skeletons.Money;
+import nicebank.Money;
 
 public class MoneyConverter extends Transformer<Money>{
 
