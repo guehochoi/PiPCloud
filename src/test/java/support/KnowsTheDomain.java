@@ -22,7 +22,7 @@ public class KnowsTheDomain {
 	}
 	public Teller getTeller() {
 		if (teller == null) {
-			teller = new Teller(getCashSlot());
+			teller = new ATMUserInterface();
 		}
 		return teller;
 	}
